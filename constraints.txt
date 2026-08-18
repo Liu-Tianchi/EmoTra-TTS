@@ -1,0 +1,8 @@
+# pip build/runtime constraints for the EmoTra-TTS environment.
+#
+# openai-whisper==20231117 ships only an sdist and its setup.py does
+# `import pkg_resources`, which setuptools>=81 removed. During `pip` build
+# isolation the latest setuptools is used, so the build fails with
+# "ModuleNotFoundError: No module named 'pkg_resources'".
+# Pinning setuptools<81 for the (isolated) build fixes it.
+setuptools<81

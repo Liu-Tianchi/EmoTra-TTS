@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Visual Studio Code files
+.vscode
+.vs
+
+# PyCharm files
+.idea
+
+# Eclipse Project settings
+*.*project
+.settings
+
+# Sublime Text settings
+*.sublime-workspace
+*.sublime-project
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*.swm
+*~
+
+# IPython notebook checkpoints
+.ipynb_checkpoints
+
+# macOS dir files
+.DS_Store
+
+exp
+data
+raw_wav
+tensorboard
+**/tensorboard/
+**/*build*
+
+# Clangd files
+.cache
+compile_commands.json
+
+# train/inference files
+*.wav
+*.m4a
+*.aac
+*.pt
+*.pth
+pretrained_models
+pretrained_models/*
+
+# third_party/ is NOT redistributed. Every dependency (UniSpeech SV code, WavLM
+# checkpoint, w2v2-vad model, etc.) is fetched at setup time by
+# scripts/setup_third_party.sh — see README. We keep only the Matcha-TTS submodule
+# pointer and an empty placeholder in git.
+third_party/*
+!third_party/.gitkeep
+!third_party/Matcha-TTS
+*_pb2_grpc.py
+*_pb2.py
+*.tar
