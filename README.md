@@ -10,7 +10,9 @@
 </p>
 
 <p align="center">
-  🎧 <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage"><b>Demo Page</b></a>
+  <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage">
+    <img src="https://img.shields.io/badge/🎧_Listen_to_Demo_Samples-Demo_Page-ff4b6e?style=for-the-badge&logoColor=white" alt="Demo Page">
+  </a>
 </p>
 
 EmoTra-TTS (Emotion Transition) is a two-stage fine-tuning framework built on [CosyVoice2](https://github.com/FunAudioLLM/CosyVoice) that enables **continuous emotion control** in speech synthesis using Valence-Arousal-Dominance (VAD) representations.
