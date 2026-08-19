@@ -1,28 +1,34 @@
 <p align="center">
-  <img src="assets/emotra-logo.png" alt="EmoTra-TTS" width="420">
+  <img src="assets/emotra-logo.png" alt="EmoTra-TTS" width="440">
 </p>
 
-<h1 align="center">EmoTra-TTS — Emotion Transition for Text-to-Speech</h1>
+<h3 align="center">Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</h3>
 
 <p align="center">
-  Official release for the <b>EMNLP 2026</b> accepted paper<br>
-  <i>EmoTra-TTS: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</i>
+  <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage"><img src="https://img.shields.io/badge/🎧_Demo-Listen_Now-ff4b6e?style=for-the-badge" alt="Demo Page"></a>
+  <a href="#-citation"><img src="https://img.shields.io/badge/📄_Paper-EMNLP_2026-4b8bff?style=for-the-badge" alt="Paper"></a>
+  <a href="https://github.com/FunAudioLLM/CosyVoice"><img src="https://img.shields.io/badge/Built_on-CosyVoice2-6f42c1?style=for-the-badge" alt="CosyVoice2"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-2ea44f?style=for-the-badge" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage">
-    <img src="https://img.shields.io/badge/🎧_Listen_to_Demo_Samples-Demo_Page-ff4b6e?style=for-the-badge&logoColor=white" alt="Demo Page">
-  </a>
+  Official code release for the <b>EMNLP 2026</b> paper<br>
+  <i>“EmoTra-TTS: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis”</i>
 </p>
 
-EmoTra-TTS (Emotion Transition) is a two-stage fine-tuning framework built on [CosyVoice2](https://github.com/FunAudioLLM/CosyVoice) that enables **continuous emotion control** in speech synthesis using Valence-Arousal-Dominance (VAD) representations.
+---
 
-Instead of discrete emotion labels, EmoTra-TTS uses 3D VAD vectors to specify the **start** and **end** emotional states, and synthesizes speech that smoothly transitions between them.
+**EmoTra-TTS** is a two-stage fine-tuning framework built on [CosyVoice 2](https://github.com/FunAudioLLM/CosyVoice) that enables **continuous emotion control** in speech synthesis using **Valence–Arousal–Dominance (VAD)** representations. Instead of discrete emotion labels, it takes 3D VAD vectors for the **start** and **end** emotional states and synthesizes speech that transitions **smoothly** between them — all within a single utterance.
 
-> **Patent Notice:** The core method of EmoTra-TTS has been submitted for patent protection.
-> Please see the [License](#license) section for details.
+> **Patent Notice.** The core method of EmoTra-TTS has been submitted for patent protection. Please see the [License](#-license) section for details.
 
-## Architecture
+## 📰 Updates
+
+- **Aug 2026** — 🎉 Public code release: full data-prep, training, inference, and evaluation pipelines.
+- **Aug 2026** — 🎧 The [demo page](https://github.com/Liu-Tianchi/EmoTra_DemoPage) is live — listen to emotion-transition samples.
+- **2026** — 📄 EmoTra-TTS was accepted to **EMNLP 2026**.
+
+## 🏗️ Architecture
 
 EmoTra-TTS adds emotion conditioning to CosyVoice 2 via two-stage supervised fine-tuning:
 
@@ -33,7 +39,7 @@ EmoTra-TTS adds emotion conditioning to CosyVoice 2 via two-stage supervised fin
 
 > **Naming note.** In the code and file names this method carries the internal codename `sft_Flow_Lynorm_fixs` (**L**ayer**norm** + **fix**ed **s**cale); it refers to exactly the Direction-Magnitude Decoupled method in our paper.
 
-## Installation
+## ⚙️ Installation
 
 ### Prerequisites
 
@@ -101,7 +107,7 @@ conda activate EmoTra
 python -c "from modelscope import snapshot_download; snapshot_download('iic/CosyVoice2-0.5B', local_dir='pretrained_models/CosyVoice2-0.5B')"
 ```
 
-## Pipeline Overview
+## 🔭 Pipeline Overview
 
 ```
 Step 0: Download EmoVoice-DB dataset
@@ -119,7 +125,7 @@ Inference: Synthesize speech with continuous emotion transition
 
 > **Note:** Step 2 is intentionally skipped — Step 3 reads directly from Step 1 output.
 
-## Data Preparation
+## 📦 Data Preparation
 
 ### Step 0: Download EmoVoice-DB
 
@@ -208,7 +214,7 @@ Output: `data/transition_data_asr/sage/transition_data_asr_filtered.jsonl`
 > `neutral_audio`, and the matching `step3_output_dir`). Both speakers are fully
 > supported.
 
-## Training
+## 🚀 Training
 
 All training scripts are in `examples/libritts/cosyvoice2/`.
 
@@ -268,7 +274,7 @@ tensorboard --logdir=tensorboard/cosyvoice2_EmoTra_sft_LLM --port=6006 --bind_al
 tensorboard --logdir=tensorboard/cosyvoice2_EmoTra_sft_Flow_Lynorm_fixs --port=6015 --bind_all
 ```
 
-## Inference
+## 🎙️ Inference
 
 ### Single Utterance
 
@@ -295,7 +301,7 @@ Where:
 - `--vad_end V,A,D` — ending emotion
 - `--emo_scale` — emotion injection strength (default: 0.07)
 
-## Evaluation
+## 📊 Evaluation
 
 ### ASR (content consistency)
 
@@ -348,7 +354,7 @@ conda run -n sim python eval_sim_folder_multiref.py \
     --audio-dir <output_dir>
 ```
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 EmoTra_TTS/
@@ -419,7 +425,7 @@ EmoTra_TTS/
 └── pretrained_models/ → (symlink)      # CosyVoice2-0.5B pretrained weights
 ```
 
-## License
+## 📜 License
 
 EmoTra-TTS is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See the [`LICENSE`](LICENSE) file for the full terms and third-party attributions.
 
@@ -427,11 +433,11 @@ EmoTra-TTS is released under the [Apache License 2.0](https://www.apache.org/lic
 - **Files derived from [CosyVoice 2](https://github.com/FunAudioLLM/CosyVoice):** Built upon CosyVoice (Apache-2.0); all upstream Apache-2.0 obligations remain in effect, with additional modifications by Tianchi Liu.
 - **Third-party components:** This repository does not redistribute third-party code — it only documents how to obtain and use each dependency. Every third-party component remains under its own original license, and users are responsible for complying with those licenses.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 EmoTra-TTS is built on top of [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) by Alibaba Group. We gratefully acknowledge the CosyVoice team for making their excellent TTS framework available under the Apache 2.0 license.
 
-## Citation
+## 📖 Citation
 
 If you use CosyVoice as the base framework, please cite:
 
