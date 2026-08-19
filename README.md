@@ -4,6 +4,11 @@
 
 <h1 align="center">EmoTra-TTS — Emotion Transition for Text-to-Speech</h1>
 
+<p align="center">
+  Official release for the <b>EMNLP 2026</b> accepted paper<br>
+  <i>EmoTra-TTS: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</i>
+</p>
+
 EmoTra-TTS (Emotion Transition) is a two-stage fine-tuning framework built on [CosyVoice2](https://github.com/FunAudioLLM/CosyVoice) that enables **continuous emotion control** in speech synthesis using Valence-Arousal-Dominance (VAD) representations.
 
 Instead of discrete emotion labels, EmoTra-TTS uses 3D VAD vectors to specify the **start** and **end** emotional states, and synthesizes speech that smoothly transitions between them.
