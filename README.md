@@ -5,10 +5,9 @@
 <h3 align="center">Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</h3>
 
 <p align="center">
-  <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage"><img src="https://img.shields.io/badge/🎧_Demo-Listen_Now-ff4b6e?style=for-the-badge" alt="Demo Page"></a>
-  <a href="#-citation"><img src="https://img.shields.io/badge/📄_Paper-EMNLP_2026-4b8bff?style=for-the-badge" alt="Paper"></a>
-  <a href="https://github.com/FunAudioLLM/CosyVoice"><img src="https://img.shields.io/badge/Built_on-CosyVoice2-6f42c1?style=for-the-badge" alt="CosyVoice2"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-2ea44f?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage"><img src="https://img.shields.io/badge/🎧_Demo-Listen_Now-ff4b6e?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Demo Page"></a>
+  &nbsp;
+  <a href="#-citation"><img src="https://img.shields.io/badge/📄_Paper-EMNLP_2026-4b8bff?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Paper"></a>
 </p>
 
 <p align="center">
