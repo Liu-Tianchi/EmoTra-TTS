@@ -1,4 +1,8 @@
-# EmoTra-TTS — Emotion Transition for Text-to-Speech
+<p align="center">
+  <img src="assets/emotra-logo.png" alt="EmoTra-TTS" width="420">
+</p>
+
+<h1 align="center">EmoTra-TTS — Emotion Transition for Text-to-Speech</h1>
 
 EmoTra-TTS (Emotion Transition) is a two-stage fine-tuning framework built on [CosyVoice2](https://github.com/FunAudioLLM/CosyVoice) that enables **continuous emotion control** in speech synthesis using Valence-Arousal-Dominance (VAD) representations.
 
@@ -36,7 +40,8 @@ under its own license, by a setup script.
 Clone the repository (with the Matcha-TTS submodule):
 
 ```bash
-git clone --recurse-submodules <REPO_URL>
+git clone --recurse-submodules https://github.com/Liu-Tianchi/EmoTra-TTS.git
+cd EmoTra-TTS
 # already cloned without submodules? one line pulls it in:
 git submodule update --init --recursive
 ```
