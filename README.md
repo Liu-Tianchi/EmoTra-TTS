@@ -2,7 +2,7 @@
   <img src="assets/emotra-logo.png" alt="EmoTra-TTS" width="440">
 </p>
 
-<h3 align="center">Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</h3>
+<!-- <h3 align="center">Smooth Intra-Utterance Emotion Transitions for Speech Synthesis</h3> -->
 
 <p align="center">
   <a href="https://github.com/Liu-Tianchi/EmoTra_DemoPage"><img src="https://img.shields.io/badge/🎧_Demo-Listen_Now-ff4b6e?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Demo Page"></a>
