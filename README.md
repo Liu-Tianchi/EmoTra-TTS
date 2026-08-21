@@ -22,10 +22,10 @@
 > **Patent Notice.** The core method of EmoTra-TTS has been submitted for patent protection. Please see the [License](#-license) section for details.
 
 ## 📰 Updates
-
+- **Aug 2026** — 📄 EmoTra-TTS is accepted to **EMNLP 2026**.
 - **Aug 2026** — 🎉 Public code release: full data-prep, training, inference, and evaluation pipelines.
 - **Aug 2026** — 🎧 The [demo page](https://github.com/Liu-Tianchi/EmoTra_DemoPage) is live — listen to emotion-transition samples.
-- **2026** — 📄 EmoTra-TTS was accepted to **EMNLP 2026**.
+
 
 ## 🏗️ Architecture
 
