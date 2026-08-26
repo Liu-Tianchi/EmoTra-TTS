@@ -442,13 +442,9 @@ If you find EmoTra-TTS useful in your research, please cite our paper ([arXiv:26
 
 ```bibtex
 @article{liu2026emotra,
-  author        = {Liu, Tianchi and Song, Zeyang and Wang, Tianrui and Li, Zhipeng and Xu, Chenglin and Guo, Yiwen},
-  title         = {{EmoTra-TTS}: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis},
-  journal       = {arXiv preprint arXiv:2608.23791},
-  year          = {2026},
-  eprint        = {2608.23791},
-  archivePrefix = {arXiv},
-  primaryClass  = {eess.AS},
-  url           = {https://arxiv.org/abs/2608.23791},
+  author  = {Liu, Tianchi and Song, Zeyang and Wang, Tianrui and Li, Zhipeng and Xu, Chenglin and Guo, Yiwen},
+  title   = {{EmoTra-TTS}: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis},
+  journal = {arXiv preprint arXiv:2608.23791},
+  year    = {2026},
 }
 ```
