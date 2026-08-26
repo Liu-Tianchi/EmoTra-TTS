@@ -24,6 +24,7 @@
 ## 📰 Updates
 
 - **Aug 2026** — 📄 EmoTra-TTS is accepted to **EMNLP 2026**.
+- **Aug 2026** — 📝 The EmoTra-TTS paper is now available on [arXiv:2608.23791](https://arxiv.org/abs/2608.23791).
 - **Aug 2026** — 🎉 Public code release: full data-prep, training, inference, and evaluation pipelines.
 - **Aug 2026** — 🎧 The [demo page](https://liu-tianchi.github.io/EmoTra_DemoPage/) is live — listen to emotion-transition samples.
 
