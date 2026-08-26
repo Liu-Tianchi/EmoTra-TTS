@@ -6,13 +6,13 @@
 
 <p align="center">
   <a href="https://liu-tianchi.github.io/EmoTra_DemoPage/"><img src="https://img.shields.io/badge/🎧_Demo-Listen_Now-ff4b6e?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Demo Page"></a>
-  &nbsp;
-  <a href="#-citation"><img src="https://img.shields.io/badge/📄_Paper-EMNLP_2026-4b8bff?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Paper"></a>
+   
+  <a href="https://arxiv.org/abs/2608.23791"><img src="https://img.shields.io/badge/📄_Paper-arXiv:2608.23791-4b8bff?style=for-the-badge&labelColor=1a1a2e" height="34" alt="Paper"></a>
 </p>
 
 <p align="center">
   Official code release for the <b>EMNLP 2026</b> paper<br>
-  <i>“EmoTra-TTS: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis”</i>
+  <a href="https://arxiv.org/abs/2608.23791"><i>“EmoTra-TTS: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis”</i></a>
 </p>
 
 ---
@@ -22,10 +22,10 @@
 > **Patent Notice.** The core method of EmoTra-TTS has been submitted for patent protection. Please see the [License](#-license) section for details.
 
 ## 📰 Updates
+
 - **Aug 2026** — 📄 EmoTra-TTS is accepted to **EMNLP 2026**.
 - **Aug 2026** — 🎉 Public code release: full data-prep, training, inference, and evaluation pipelines.
 - **Aug 2026** — 🎧 The [demo page](https://github.com/Liu-Tianchi/EmoTra_DemoPage) is live — listen to emotion-transition samples.
-
 
 ## 🏗️ Architecture
 
@@ -438,13 +438,17 @@ EmoTra-TTS is built on top of [CosyVoice](https://github.com/FunAudioLLM/CosyVoi
 
 ## 📖 Citation
 
-If you use CosyVoice as the base framework, please cite:
+If you find EmoTra-TTS useful in your research, please cite our paper ([arXiv:2608.23791](https://arxiv.org/abs/2608.23791)):
 
 ```bibtex
-@article{cosyvoice2,
-  title={Cosyvoice 2: Scalable streaming speech synthesis with large language models},
-  author={Du, Zhihao and Wang, Yuxuan and Chen, Qian and Shi, Xian and Lv, Xiang and Zhao, Tianyu and Gao, Zhifu and Yang, Yexin and Gao, Changfeng and Wang, Hui and others},
-  journal={arXiv preprint arXiv:2412.10117},
-  year={2024}
+@article{liu2026emotra,
+  author        = {Liu, Tianchi and Song, Zeyang and Wang, Tianrui and Li, Zhipeng and Xu, Chenglin and Guo, Yiwen},
+  title         = {{EmoTra-TTS}: Smooth Intra-Utterance Emotion Transitions for Speech Synthesis},
+  journal       = {arXiv preprint arXiv:2608.23791},
+  year          = {2026},
+  eprint        = {2608.23791},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.AS},
+  url           = {https://arxiv.org/abs/2608.23791},
 }
 ```
